@@ -28,6 +28,7 @@ namespace ChessBoardClassLibrary.Models
             Size = size;
             Grid = new CellModel[size, size];
 
+            // Create the board
             InitializeBoard();
         }
 

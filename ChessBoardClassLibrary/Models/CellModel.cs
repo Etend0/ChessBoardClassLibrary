@@ -24,8 +24,8 @@ namespace ChessBoardClassLibrary.Models
         // These properties need to be both readable and writable from outside the model,
         // so we use public getters and setters. This is appropriate for properties
         // where external components (e.g., the board logic) are responsible for updating them.
-        public string PieceOccypyingCell { get; private set; }
-        public bool IsLegelNextMove { get; private set; }
+        public string PieceOccypyingCell { get; set; }
+        public bool IsLegelNextMove { get; set; }
 
         /// <summary>
         /// Parameterized Constructor for cell model class

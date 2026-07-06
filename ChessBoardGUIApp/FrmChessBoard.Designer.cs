@@ -32,13 +32,15 @@
             label1 = new Label();
             label2 = new Label();
             pnlChessBoard = new Panel();
+            label3 = new Label();
+            cmbTheme = new ComboBox();
             SuspendLayout();
             // 
             // cmbChessPieces
             // 
             cmbChessPieces.FormattingEnabled = true;
             cmbChessPieces.Items.AddRange(new object[] { "King", "Queen", "Bishop", "Knight", "Rook" });
-            cmbChessPieces.Location = new Point(552, 12);
+            cmbChessPieces.Location = new Point(589, 12);
             cmbChessPieces.Name = "cmbChessPieces";
             cmbChessPieces.Size = new Size(121, 23);
             cmbChessPieces.TabIndex = 0;
@@ -46,7 +48,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(503, 15);
+            label1.Location = new Point(540, 15);
             label1.Name = "label1";
             label1.Size = new Size(43, 15);
             label1.TabIndex = 1;
@@ -68,11 +70,32 @@
             pnlChessBoard.Size = new Size(500, 500);
             pnlChessBoard.TabIndex = 3;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(540, 71);
+            label3.Name = "label3";
+            label3.Size = new Size(46, 15);
+            label3.TabIndex = 5;
+            label3.Text = "Theme:";
+            // 
+            // cmbTheme
+            // 
+            cmbTheme.FormattingEnabled = true;
+            cmbTheme.Items.AddRange(new object[] { "Basic", "Cool", "Warm", "Cold", "Neutral", "Neon" });
+            cmbTheme.Location = new Point(589, 68);
+            cmbTheme.Name = "cmbTheme";
+            cmbTheme.Size = new Size(121, 23);
+            cmbTheme.TabIndex = 4;
+            cmbTheme.SelectedIndexChanged += cmbThemeSelected;
+            // 
             // FrmChessBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(685, 557);
+            ClientSize = new Size(722, 557);
+            Controls.Add(label3);
+            Controls.Add(cmbTheme);
             Controls.Add(pnlChessBoard);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -89,5 +112,7 @@
         private Label label1;
         private Label label2;
         private Panel pnlChessBoard;
+        private Label label3;
+        private ComboBox cmbTheme;
     }
 }

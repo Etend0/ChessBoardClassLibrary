@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ChessBoardClassLibrary.Models
 {
-    internal class BoardModel
+    public class BoardModel
     {
         // Class level properties
         // 'get' is public so other classes can read it

@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ChessBoardClassLibrary.Models
 {
-    internal class CellModel
+    public class CellModel
     {
         // Class level properties with public getters and private setters.
         // This is an example of encapsulation: external code can read the values,

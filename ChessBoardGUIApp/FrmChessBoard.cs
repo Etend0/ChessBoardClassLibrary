@@ -1,8 +1,8 @@
 namespace ChessBoardGUIApp
 {
-    public partial class Form1 : Form
+    public partial class FrmChessBoard : Form
     {
-        public Form1()
+        public FrmChessBoard()
         {
             InitializeComponent();
         }

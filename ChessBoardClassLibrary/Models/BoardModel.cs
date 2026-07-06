@@ -43,7 +43,6 @@ namespace ChessBoardClassLibrary.Models
         /// </summary>
         private void InitializeBoard()
         {
-            // Create the board
             // Loop through the rows of the grid
             for (int row = 0; row < Size; row++)
             {

@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace ChessBoardClassLibrary.Services.BusinessLogicLayer
 {
-    internal class BoardLogic
+    public class BoardLogic
     {
         /// <summary>
         /// Reset the board by setting the
@@ -73,35 +73,35 @@ namespace ChessBoardClassLibrary.Services.BusinessLogicLayer
             // Use a switch statement to determine the behavior of the piece
             switch (chessPiece.ToLower())
             {
-                case "Knight":
+                case "knight":
                     // Set the occupying property of the current cell
                     board.Grid[currentCell.Row, currentCell.Column].PieceOccupyingCell = "N";
                     // Mark the valid moves for the knight
                     board = MarkValidKnightMoves(board, currentCell);
                     break;
 
-                case "Rook":
+                case "rook":
                     // Set the occupying property of the current cell
                     board.Grid[currentCell.Row, currentCell.Column].PieceOccupyingCell = "R";
                     // Mark the valid moves for the rook
                     board = MarkValidRookMoves(board, currentCell);
                     break;
 
-                case "Bishop":
+                case "bishop":
                     // Set the occupying property of the current cell
                     board.Grid[currentCell.Row, currentCell.Column].PieceOccupyingCell = "B";
                     // Mark the valid moves for the bishop
                     board = MarkValidBishopMoves(board, currentCell);
                     break;
 
-                case "Queen":
+                case "queen":
                     // Set the occupying property of the current cell
                     board.Grid[currentCell.Row, currentCell.Column].PieceOccupyingCell = "Q";
                     // Mark the valid moves for the queen
                     board = MarkValidQueenMoves(board, currentCell);
                     break;
 
-                case "King":
+                case "king":
                     // Set the occupying property of the current cell
                     board.Grid[currentCell.Row, currentCell.Column].PieceOccupyingCell = "K";
                     // Mark the valid moves for the king

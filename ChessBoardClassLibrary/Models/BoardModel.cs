@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /*
  * Elijah Hodge
  * CST - 250
- * 07/01/2026
+ * 07/04/2026
  * Activity 3
  */
 
@@ -22,6 +22,10 @@ namespace ChessBoardClassLibrary.Models
         public int Size { get; private set; }
         public CellModel[,] Grid { get; private set; }
 
+        /// <summary>
+        /// Parameterized Constructor for board model class
+        /// </summary>
+        /// <param name="size"></param>
         public BoardModel(int size)
         {
             // Initialize the properties for the model
